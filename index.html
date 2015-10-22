@@ -1131,7 +1131,7 @@ var buttonView = {
 };
 _.bindAll(buttonView, 'onClick', 'onHover');
 // When the button is clicked, this.label will have the correct value.
-jQuery('#underscore_button').bind('click', buttonView.onClick);
+jQuery('#underscore_button').on('click', buttonView.onClick);
 </pre>
 
       <p id="partial">
@@ -1741,7 +1741,7 @@ _.isRegExp(/moe/);
       <p id="isError">
         <b class="header">isError</b><code>_.isError(object)</code>
         <br />
-        Returns <i>true</i> if <b>object</b> inherrits from an Error.
+        Returns <i>true</i> if <b>object</b> inherits from an Error.
       </p>
       <pre>
 try {
